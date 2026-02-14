@@ -1,0 +1,11 @@
+model = "gpt-5.3-codex"
+sandbox = "danger-full-access"
+ask_for_approval = "never"
+[projects."{{ .chezmoi.homeDir }}"]
+trust_level = "trusted"
+
+[notice.model_migrations]
+"gpt-5.2-codex" = "gpt-5.3-codex"
+
+[mcp_servers.environment-sync]
+command = "{{ .chezmoi.homeDir }}/digitalocean01/mcp/run-mcp.sh"

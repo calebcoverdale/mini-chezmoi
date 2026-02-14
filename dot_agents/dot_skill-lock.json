@@ -1,0 +1,52 @@
+{
+  "version": 3,
+  "skills": {
+    "drizzle-orm": {
+      "source": "bobmatnyc/claude-mpm-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/bobmatnyc/claude-mpm-skills.git",
+      "skillPath": "toolchains/typescript/data/drizzle/SKILL.md",
+      "skillFolderHash": "4099d6bf4dd40494a5df9e5a072855b834bf376e",
+      "installedAt": "2026-02-12T20:49:36.595Z",
+      "updatedAt": "2026-02-12T20:49:36.595Z"
+    },
+    "find-skills": {
+      "source": "vercel-labs/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/vercel-labs/skills.git",
+      "skillPath": "skills/find-skills/SKILL.md",
+      "skillFolderHash": "c2f31172b6f256272305a5e6e7228b258446899f",
+      "installedAt": "2026-02-12T20:49:39.315Z",
+      "updatedAt": "2026-02-12T20:49:39.315Z"
+    },
+    "codex": {
+      "source": "softaworks/agent-toolkit",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/softaworks/agent-toolkit.git",
+      "skillPath": "skills/codex/SKILL.md",
+      "skillFolderHash": "c7b5263152d1f5b335e594a407219bf6ec5fe3fd",
+      "installedAt": "2026-02-12T20:53:10.155Z",
+      "updatedAt": "2026-02-12T20:53:10.155Z"
+    },
+    "docker-expert": {
+      "source": "sickn33/antigravity-awesome-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/sickn33/antigravity-awesome-skills.git",
+      "skillPath": "skills/docker-expert/SKILL.md",
+      "skillFolderHash": "45853e487ac0d45f8cded5d33ac97fa34d2f3c0a",
+      "installedAt": "2026-02-12T20:57:25.537Z",
+      "updatedAt": "2026-02-12T20:57:25.537Z"
+    }
+  },
+  "dismissed": {
+    "findSkillsPrompt": true
+  },
+  "lastSelectedAgents": [
+    "amp",
+    "codex",
+    "gemini-cli",
+    "github-copilot",
+    "kimi-cli",
+    "opencode"
+  ]
+}

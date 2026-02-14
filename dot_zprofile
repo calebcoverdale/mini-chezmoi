@@ -1,0 +1,10 @@
+# Login shell config for zsh.
+#
+# Keep PATH consistent for non-interactive login shells (e.g. `zsh -lc ...`),
+# so user-global installs like `npm -g` with prefix `$HOME/.local` work.
+
+# Reuse the standard login profile if it exists.
+if [ -f "$HOME/.profile" ]; then
+  . "$HOME/.profile"
+fi
+

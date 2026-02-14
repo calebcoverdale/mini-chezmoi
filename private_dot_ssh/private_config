@@ -1,0 +1,24 @@
+# Managed by Codex: NetBird jump host convenience.
+#
+# caleb-modem is reachable over NetBird at 100.86.0.1.
+# We explicitly disable NetBird's SSH integration ProxyCommand to force
+# a standard OpenSSH connection.
+
+Host caleb-modem
+  HostName 100.86.0.1
+  User root
+  ProxyCommand none
+  IdentityFile /home/calebcoverdale/.ssh/id_ed25519
+  IdentitiesOnly yes
+  ServerAliveInterval 30
+  ServerAliveCountMax 3
+
+Host homeassistant-modem
+  HostName 10.0.0.70
+  User calebcoverdale
+  ProxyJump caleb-modem
+  ProxyCommand none
+  IdentityFile /home/calebcoverdale/.ssh/id_ed25519_homeassistant
+  IdentitiesOnly yes
+  ServerAliveInterval 30
+  ServerAliveCountMax 3

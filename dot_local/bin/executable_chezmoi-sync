@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+if ! command -v chezmoi >/dev/null 2>&1; then
+  echo "chezmoi-sync: chezmoi not found in PATH" >&2
+  exit 1
+fi
+
+src="$(chezmoi source-path)"
+
+if [ ! -d "$src/.git" ]; then
+  echo "chezmoi-sync: chezmoi source dir is not a git repo: $src" >&2
+  exit 1
+fi
+
+echo "Pulling latest..."
+git -C "$src" pull --ff-only
+
+echo "Applying..."
+chezmoi apply
+
+echo "Refreshing externals..."
+chezmoi apply -R always >/dev/null
+
+echo "Done."
+

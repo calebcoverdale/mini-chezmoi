@@ -1,0 +1,38 @@
+// Practical, batteries-included baseline config.
+// Keeps Zellij defaults for keybinds/plugins, while tuning session and scrollback behavior.
+
+default_mode "normal"
+default_layout "compact"
+session_name "digitalocean"
+attach_to_session true
+mouse_mode true
+advanced_mouse_actions false
+
+session_serialization true
+serialize_pane_viewport true
+scrollback_lines_to_serialize 20000
+scroll_buffer_size 200000
+
+copy_clipboard "system"
+copy_on_select false
+
+show_startup_tips false
+show_release_notes false
+simplified_ui true
+
+keybinds {
+    normal {
+        bind "Alt s" { SwitchToMode "Scroll"; }
+        bind "PageUp" { SwitchToMode "Scroll"; PageScrollUp; }
+        bind "PageDown" { SwitchToMode "Scroll"; PageScrollDown; }
+        bind "Alt k" { SwitchToMode "Scroll"; ScrollUp; }
+        bind "Alt j" { SwitchToMode "Scroll"; ScrollDown; }
+        bind "Alt u" { HalfPageScrollUp; }
+        bind "Alt d" { HalfPageScrollDown; }
+    }
+    scroll {
+        bind "Alt s" { ScrollToBottom; SwitchToMode "Normal"; }
+        bind "PageDown" { PageScrollDown; }
+        bind "PageUp" { PageScrollUp; }
+    }
+}

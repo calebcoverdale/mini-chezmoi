@@ -1,0 +1,4 @@
+interface:
+  display_name: "MCP Environment Sync"
+  short_description: "Scale service/env/secret onboarding safely."
+  default_prompt: "Operate and evolve the environment-sync MCP with reusable onboarding patterns for services, env vars, and secret linkages."
