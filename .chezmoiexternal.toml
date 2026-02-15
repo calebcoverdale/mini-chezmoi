@@ -21,3 +21,17 @@ type = "git-repo"
 url = "https://github.com/gpakosz/.tmux.git"
 refreshPeriod = "168h"
 clone.args = ["--depth=1"]
+
+# XDG Base Directory compliance
+# Remap dot_files to ~/.config/ structure
+[".zshrc"]
+type = "file"
+target = ".config/zsh/.zshrc"
+
+[".zshenv"]
+type = "file"
+target = ".config/zsh/.zshenv"
+
+[".config/zsh"]
+type = "dir"
+target = ".config/zsh"
