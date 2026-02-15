@@ -1,0 +1,177 @@
+# Catppuccin Mocha Theme
+palette = "catppuccin_mocha"
+
+[palettes.catppuccin_mocha]
+rosewater = "#f5e0dc"
+flamingo = "#f2cdcd"
+pink = "#f5c2e7"
+mauve = "#cba6f7"
+red = "#f38ba8"
+maroon = "#eba0ac"
+peach = "#fab387"
+yellow = "#f9e2af"
+green = "#a6e3a1"
+teal = "#94e2d5"
+sky = "#89dceb"
+sapphire = "#74c7ec"
+blue = "#89b4fa"
+lavender = "#b4eefe"
+text = "#cdd6f4"
+subtext1 = "#bac2de"
+subtext0 = "#a6adc8"
+overlay2 = "#9399b2"
+overlay1 = "#7f849c"
+overlay0 = "#6c7086"
+surface2 = "#585b70"
+surface1 = "#45475a"
+surface0 = "#313244"
+base = "#1e1e2"
+mantle = "#181825"
+crust = "#11111b"
+
+[character]
+success_symbol = "[➜](bold green)"
+error_symbol = "[➜](bold red)"
+vimcmd_symbol = "[➜](bold fg)"
+
+[directory]
+truncation_length = 2
+format = "[](path)[(style)[/(read_only)(unstable)] "
+
+[git_branch]
+format = "[$symbol$branch]($style)"
+symbol = "git:"
+style = "bright-purple"
+
+[git_commit]
+format = "[\\/]($hash)(style)[message]"
+
+[git_state]
+format = "[$symbol$tag(\\/) $tag]($style)]"
+
+[git_status]
+format = '([\[$all_status$ahead_behind\]]($style) )'
+disabled = "  "
+style = "yellow"
+untracked = " ?"
+added = "  "
+modified = "  "
+staged = "[+]($style)"
+conflicted = "[=]($style)"
+deleted = "[✘]($style)"
+renamed = "[»](bold yellow)"
+stashed = "[⚑](bold blue)"
+
+[git_status]
+cherry_pick = "[✈](bold red)"
+cherry_equivalent = "[≡](bold red)"
+cherry_detach = "[🙝](bold red)"
+cherry_detach_full = "[🙦](bold red)"
+cherry_detach_full = "[⚘](bold red)"
+
+[node]
+symbol = " "
+style = "bold blue"
+
+[symbol]
+name = " "
+
+[username]
+format = "[$user](@$host)"
+show_always = true
+
+[hostname]
+format = "@[ssh]"
+ssh_symbol = " "
+
+[hostname]
+ssh_symbol = " "
+
+[cmd_duration]
+min_seconds = 2
+
+[format]
+symbol = " "
+
+[line_break]
+disabled = false
+
+[rust]
+symbol = "×"
+
+[package]
+symbol = " "
+
+[status]
+format = "$symbol$padding$status$padding "
+symbol = " "
+separator = " "
+disabled = "  "
+success_symbol = "[✓](bold green)"
+version_symbol = "[rpm](bold fg)"
+
+[directory]
+style = "bold blue"
+
+[time]
+format = " [%T] "
+
+[scala]
+symbol = " "
+
+[python]
+symbol = "Py"
+
+[ruby]
+symbol = "Rb"
+
+[golang]
+symbol = "Go"
+
+[java]
+symbol = "Java"
+
+[julia]
+symbol = "Jl"
+
+[lua]
+symbol = "Lua"
+
+[perl]
+symbol = "Pl"
+
+[dotnet]
+symbol = "C#"
+
+[elixir]
+symbol = "Ex"
+
+[elm]
+symbol = "El"
+
+[erlang]
+symbol = "Er"
+
+[fsharp_tool]
+symbol = "F#"
+
+[swift]
+symbol = "Swift"
+
+[clojure]
+symbol = "Cl"
+
+[kotlin]
+symbol = "Kt"
+
+[haskell]
+symbol = "Hs"
+
+[dart]
+symbol = "Da"
+
+[elm]
+symbol = "El"
+
+[rust]
+symbol = "Rs"
